@@ -50,4 +50,9 @@ public class CoordinationServerEntity extends ProxiedServerEntity<CoordinationEn
       fireAndForgetMessage(ServerElectionEvent.changed(namespace), clientDescriptor);
     }
   }
+
+  @Override
+  public void resendsCompleted() {
+    // Do nothing.
+  }
 }
